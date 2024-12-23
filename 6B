@@ -1,0 +1,13 @@
+ThemeData appTheme = ThemeData(
+  primarySwatch: Colors.blue,
+  textTheme: TextTheme(button: TextStyle(fontSize: 18)),
+);
+void main() {
+  runApp(MaterialApp(
+    theme: appTheme,
+    home: Scaffold(
+      appBar: AppBar(title: Text('Themed Application')),
+      body: Center(child: Text('Hello, Theme!')),
+    ),
+  ));
+}
